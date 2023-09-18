@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * print_array(int *a, int n) -prints n elements of an array
- * @a:name
- * @n:number of elements
+ * print_array - prints n elements of an array
+ * @a: name
+ * @n: number of elements
  */
 void print_array(int *a, int n)
 {
@@ -13,9 +13,9 @@ void print_array(int *a, int n)
 	{
 		printf("%d, ", a[i]);
 	}
-	if (i == (n - 1))
-	{
-		printf("%d", a[n - 1]);
-	}
-	printf("\n");
+		if (i == (n - 1))
+		{
+			printf("%d", a[n - 1]);
+		}
+			printf("\n");
 }

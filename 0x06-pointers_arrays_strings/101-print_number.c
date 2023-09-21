@@ -2,7 +2,7 @@
 
 /**
  * print_number - print numbers chars
- * @n: integer 
+ * @n: integer
  * Return: 0
  */
 

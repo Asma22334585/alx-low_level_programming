@@ -13,7 +13,7 @@ char *leet(char *a)
 
 	while (*a)
 	{
-		for (i=0 ; i < sizeof(lett) / sizeof(char) ; i++)
+		for (i = 0 ; i < sizeof(lett) / sizeof(char) ; i++)
 		{
 			if (*a == lett[i] || *a == lett[i] - 32)
 			{

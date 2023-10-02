@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 /**
 *main- print a program name
 *@argc: int

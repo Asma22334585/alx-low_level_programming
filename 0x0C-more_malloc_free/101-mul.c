@@ -50,8 +50,7 @@ void errors(void)
 /**
  * main - multiplies two positive numbers
  * @argc: int
- * @argv: array 
- *
+ * @argv: array
  * Return: 0 (Success)
  */
 int main(int argc, char *argv[])
@@ -77,7 +76,7 @@ int main(int argc, char *argv[])
 		for (len2 = _strlen(s2) - 1; len2 >= 0; len2--)
 		{
 			digit2 = s2[len2] - '0';
-			carry += result[len1 + len2 + 1] + (digit1 *digit2);
+			carry += result[len1 + len2 + 1] + (digit1 * digit2);
 			result[len1 + len2 + 1] = carry % 10;
 			carry /= 10;
 		}

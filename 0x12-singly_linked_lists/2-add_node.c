@@ -1,39 +1,24 @@
 #include "lists.h"
 
 /**
-* _strlen - length of a string.
-* @s : character
-* Return: int
-*/
-
-int _strlen(const char *s)
-{
-	int i = 0;
-
-	while (s[i] != '\0')
-	{
-		i++;
-	}
-	return (i);
-}
-
-/**
-* add_node - add a new node at beginning of a list_t list.
-* @head: address of pinter
-* @str: string
-* Return: int
-*/
-
+ * add_node - adds a new node at the beginning of a list_t list.
+ * @head: pointer
+ * @str: string
+ * Return: the address of the new element, or NULL if it fails
+ */
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *add;
+	list_t *new;
+	unsigned int len = 0;
 
-	add = malloc(sizeof(list_t));
-	if (add == NULL)
+	while (str[len])
+		len++;
+	new = malloc(sizeof(list_t));
+	if (!new)
 		return (NULL);
-	add->str = strdup(str);
-	add->len = _strlen(str);
-	add->next = *head;
-	*head = add;
-	return (add);
+	new->str = strdup(str);
+	new->len = len;
+	new->next = (*head);
+	(*head) = new;
+	return (*head);
 }

@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
-  * print_listint_safe -  Prints a listint_t list safely
+  * print_listint_safe - Prints a listint_t list safely
   * @head: pointer
   * Return: int
   */
